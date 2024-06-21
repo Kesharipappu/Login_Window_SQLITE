@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dashboard</class>
+ <widget class="QWidget" name="Dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1950</width>
+    <height>1500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*background-color: rgb(143, 180, 207);*/
+background-color: rgb(30, 144, 255);
+
+
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-5</y>
+     <width>1951</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color: rgb(255, 0, 127);*/
+border-color: rgb(0, 0, 0);
+color: rgb(0, 0, 0);
+background-color: rgb(50, 205, 50);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>968</width>
+        <height>17</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Cooper Black</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Welcome to Dashboard</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>632</width>
+        <height>17</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="newUserButton">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>930</y>
+     <width>111</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add New User</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="adminUserButton">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>930</y>
+     <width>131</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add New Admin </string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="dashboardTableWidget">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>101</y>
+     <width>1881</width>
+     <height>761</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: rgb(100, 149, 237); /* Cornflower Blue background */
+    color: rgb(255, 255, 255); /* White text */
+    gridline-color: rgb(255, 255, 255); /* White grid lines */
+    font-family: Arial, sans-serif; /* Modern, clean font */
+}
+
+QHeaderView::section {
+    background-color: rgb(65, 105, 225); /* Royal Blue header background */
+    color: rgb(255, 255, 255); /* White text for headers */
+    font-weight: bold; /* Bold text for headers */
+    border: 1px solid rgb(255, 255, 255); /* White border for headers */
+}
+
+QTableWidget::item {
+    border: 1px solid rgb(255, 255, 255); /* White border for table items */
+    padding: 5px; /* Padding for better readability */
+}
+
+QTableWidget::item:alternate {
+    background-color: rgb(173, 216, 230); /* Light Blue for alternate rows */
+}
+
+QTableWidget::item:selected {
+    background-color: rgb(255, 215, 0); /* Gold for selected items */
+    color: rgb(0, 0, 0); /* Black text for selected items */
+}
+
+QTableWidget::item:hover {
+    background-color: rgb(135, 206, 250); /* Light Sky Blue for hovered items */
+}
+</string>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="columnCount">
+    <number>7</number>
+   </property>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>39</number>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>269</number>
+   </attribute>
+   <attribute name="verticalHeaderMinimumSectionSize">
+    <number>26</number>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>33</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>User Id</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="background">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>First Name</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Last Name</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Security Question</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Answer</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Role</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Action</string>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

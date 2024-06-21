@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Add_New_Admin</class>
+ <widget class="QWidget" name="Add_New_Admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(100, 149, 237);</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(135, 206, 250);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>7</y>
+      <width>641</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>Cooper Black</family>
+         <pointsize>20</pointsize>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(75, 0, 130);</string>
+       </property>
+       <property name="text">
+        <string>Welcome to Add New Admin Window</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>250</y>
+     <width>381</width>
+     <height>112</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>58</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>   Security Question</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>48</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QComboBox" name="addNewAdminsecurityQuestioncomboBox">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Please select Security Question</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    border: 1px solid #5A5A5A;  /* Border color */
+    border-radius: 5px;         /* Rounded corners */
+    padding: 5px;               /* Padding inside the combobox */
+    background-color: #F0F0F0;  /* Background color */
+    color: #333333;             /* Text color */
+    font-size: 14px;            /* Font size */
+    min-width: 150px;           /* Minimum width */
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;                /* Width of the drop-down button */
+    border-left: 1px solid #5A5A5A; /* Border between combobox and drop-down button */
+}
+
+QComboBox::down-arrow {
+    image: url(:/images/down_arrow.png); /* Path to custom arrow image */
+    width: 10px;               /* Width of the arrow */
+    height: 10px;              /* Height of the arrow */
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #5A5A5A; /* Border for the drop-down list */
+    selection-background-color: #3399FF; /* Background color for selected item */
+    selection-color: #FFFFFF;   /* Text color for selected item */
+    background-color: #FFFFFF;  /* Background color for the list */
+    color: #333333;             /* Text color for the list */
+}
+
+QComboBox::item {
+    background-color: #FFFFFF;  /* Background color for items */
+    color: #333333;             /* Text color for items */
+    padding: 5px;               /* Padding for items */
+}
+
+QComboBox::item:selected {
+    background-color: #3399FF;  /* Background color for selected item */
+    color: #FFFFFF;             /* Text color for selected item */
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addNewAdminSecurityQuestionlineEdit">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Enter answer of Security Question</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/*background-color: rgb(158, 109, 97,0%);*/
+ background-color: rgba(255, 255, 255, 0.8);
+color: rgb(0, 0, 0);
+border: 1px solid rgb(100, 100, 100);
+ padding: 5px;
+ border-radius: 5px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter your answer here....</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="submitButton">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>370</y>
+     <width>111</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Click to Save Details</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(50, 205, 50); /* Green background */
+    color: rgb(0, 0, 0); /* White text */
+    border: 2px solid rgb(34, 139, 34); /* Darker green border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(34, 139, 34); /* Darker green on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>325</x>
+     <y>370</y>
+     <width>101</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Click to Close Window</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(50, 205, 50); /* Green background */
+    color: rgb(0, 0, 0); /* White text */
+    border: 2px solid rgb(34, 139, 34); /* Darker green border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(34, 139, 34); /* Darker green on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>91</y>
+     <width>381</width>
+     <height>168</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>User Id</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>108</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addNewAdminIdLineEdit">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Please enter User Id</string>
+        </property>
+        <property name="toolTipDuration">
+         <number>10</number>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/*background-color: rgb(158, 109, 97,0%);*/
+ background-color: rgba(255, 255, 255, 0.8);
+color: rgb(0, 0, 0);
+border: 1px solid rgb(100, 100, 100);
+ padding: 5px;
+ border-radius: 5px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter User Id</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>First Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>88</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addNewAdminFirstNamelineEdit">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Please enter First Name</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/*background-color: rgb(158, 109, 97,0%);*/
+ background-color: rgba(255, 255, 255, 0.8);
+color: rgb(0, 0, 0);
+border: 1px solid rgb(100, 100, 100);
+ padding: 5px;
+ border-radius: 5px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter First Name</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Last Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>88</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addNewAdminLastNamelineEdit">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Please enter Last Name</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/*background-color: rgb(158, 109, 97,0%);*/
+ background-color: rgba(255, 255, 255, 0.8);
+color: rgb(0, 0, 0);
+border: 1px solid rgb(100, 100, 100);
+ padding: 5px;
+ border-radius: 5px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter Last Name</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Password</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>88</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="addNewAdminPasswordLineEdit">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Please enter Password</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/*background-color: rgb(158, 109, 97,0%);*/
+ background-color: rgba(255, 255, 255, 0.8);
+color: rgb(0, 0, 0);
+border: 1px solid rgb(100, 100, 100);
+ padding: 5px;
+ border-radius: 5px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter Password</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
