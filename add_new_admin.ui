@@ -7,95 +7,23 @@
     <x>0</x>
     <y>0</y>
     <width>659</width>
-    <height>427</height>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(100, 149, 237);</string>
+   <string notr="true">/*background-color: #1A1A2A*/
+/*background-color: rgb(138, 138, 255);*/
+background-color: rgb(114, 159, 207);
+</string>
   </property>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>661</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(135, 206, 250);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::WinPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QWidget" name="layoutWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>7</y>
-      <width>641</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <spacer name="horizontalSpacer_4">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <family>Cooper Black</family>
-         <pointsize>20</pointsize>
-         <bold>false</bold>
-         <underline>false</underline>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(75, 0, 130);</string>
-       </property>
-       <property name="text">
-        <string>Welcome to Add New Admin Window</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_5">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-    </layout>
-   </widget>
-  </widget>
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>250</y>
+     <y>190</y>
      <width>381</width>
      <height>112</height>
     </rect>
@@ -123,6 +51,9 @@
           <pointsize>14</pointsize>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
          <string>   Security Question</string>
@@ -229,87 +160,11 @@ border: 1px solid rgb(100, 100, 100);
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="submitButton">
-   <property name="geometry">
-    <rect>
-     <x>165</x>
-     <y>370</y>
-     <width>111</width>
-     <height>47</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>Click to Save Details</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: rgb(50, 205, 50); /* Green background */
-    color: rgb(0, 0, 0); /* White text */
-    border: 2px solid rgb(34, 139, 34); /* Darker green border */
-    padding: 10px 20px; /* Padding for better appearance */
-    border-radius: 5px; /* Rounded corners for a modern look */
-    font-size: 16px; /* Adjust font size */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
-}
-
-QPushButton:hover {
-    background-color: rgb(34, 139, 34); /* Darker green on hover */
-}
-
-QPushButton:focus {
-    border-color: rgb(255, 255, 255); /* White border on focus */
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
-}
-</string>
-   </property>
-   <property name="text">
-    <string>Submit</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="cancelButton">
-   <property name="geometry">
-    <rect>
-     <x>325</x>
-     <y>370</y>
-     <width>101</width>
-     <height>47</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string>Click to Close Window</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: rgb(50, 205, 50); /* Green background */
-    color: rgb(0, 0, 0); /* White text */
-    border: 2px solid rgb(34, 139, 34); /* Darker green border */
-    padding: 10px 20px; /* Padding for better appearance */
-    border-radius: 5px; /* Rounded corners for a modern look */
-    font-size: 16px; /* Adjust font size */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
-}
-
-QPushButton:hover {
-    background-color: rgb(34, 139, 34); /* Darker green on hover */
-}
-
-QPushButton:focus {
-    border-color: rgb(255, 255, 255); /* White border on focus */
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
-}
-</string>
-   </property>
-   <property name="text">
-    <string>Cancel</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>91</y>
+     <y>31</y>
      <width>381</width>
      <height>168</height>
     </rect>
@@ -324,6 +179,9 @@ QPushButton:focus {
           <pointsize>14</pointsize>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
          <string>User Id</string>
@@ -381,6 +239,9 @@ border: 1px solid rgb(100, 100, 100);
           <bold>true</bold>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
         <property name="text">
          <string>First Name</string>
         </property>
@@ -433,6 +294,9 @@ border: 1px solid rgb(100, 100, 100);
           <pointsize>14</pointsize>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
          <string>Last Name</string>
@@ -487,6 +351,9 @@ border: 1px solid rgb(100, 100, 100);
           <bold>true</bold>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
         <property name="text">
          <string>Password</string>
         </property>
@@ -523,12 +390,129 @@ border: 1px solid rgb(100, 100, 100);
  padding: 5px;
  border-radius: 5px;</string>
         </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
         <property name="placeholderText">
          <string>Enter Password</string>
         </property>
        </widget>
       </item>
      </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>310</y>
+     <width>331</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="submitButton">
+      <property name="toolTip">
+       <string>Click to Save Details</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*background-color: rgb(255, 132, 77);*/
+QPushButton {
+    background-color: rgb(255, 132, 77); /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid rgb(205, 92, 92); /* Indian Red border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 69, 0); /* Red-Orange on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="updateAdminButton">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*background-color: rgb(255, 132, 77);*/
+QPushButton {
+    background-color: rgb(255, 132, 77); /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid rgb(205, 92, 92); /* Indian Red border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 69, 0); /* Red-Orange on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Update</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelButton">
+      <property name="toolTip">
+       <string>Click to Close Window</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*background-color: rgb(255, 132, 77);*/
+QPushButton {
+    background-color: rgb(255, 132, 77); /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid rgb(205, 92, 92); /* Indian Red border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 69, 0); /* Red-Orange on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

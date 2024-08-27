@@ -10,93 +10,60 @@
     <height>1500</height>
    </rect>
   </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
    <string notr="true">/*background-color: rgb(143, 180, 207);*/
-background-color: rgb(30, 144, 255);
+/*background-color: rgb(30, 144, 255);*/
+/*background-color: rgb(26, 26, 42);*/
+/*background-color: rgb(74, 74, 74);*/
+/*background-color: rgb(138, 138, 255);*/
+background-color: rgb(114, 159, 207);
 
 
 </string>
   </property>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>-5</y>
-     <width>1951</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">/*background-color: rgb(255, 0, 127);*/
-border-color: rgb(0, 0, 0);
-color: rgb(0, 0, 0);
-background-color: rgb(50, 205, 50);</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::WinPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>968</width>
-        <height>17</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="font">
-       <font>
-        <family>Cooper Black</family>
-        <pointsize>20</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Welcome to Dashboard</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>632</width>
-        <height>17</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-   </layout>
-  </widget>
   <widget class="QPushButton" name="newUserButton">
    <property name="geometry">
     <rect>
-     <x>745</x>
+     <x>705</x>
      <y>930</y>
-     <width>111</width>
+     <width>160</width>
      <height>47</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>10</pointsize>
+     <pointsize>-1</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color: rgb(255, 132, 77);*/
+QPushButton {
+    background-color: rgb(255, 132, 77); /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid rgb(205, 92, 92); /* Indian Red border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 69, 0); /* Red-Orange on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
    </property>
    <property name="text">
     <string>Add New User</string>
@@ -107,15 +74,38 @@ background-color: rgb(50, 205, 50);</string>
     <rect>
      <x>920</x>
      <y>930</y>
-     <width>131</width>
+     <width>180</width>
      <height>47</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>10</pointsize>
+     <pointsize>-1</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color: rgb(255, 132, 77);*/
+QPushButton {
+    background-color: rgb(255, 132, 77); /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid rgb(205, 92, 92); /* Indian Red border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 69, 0); /* Red-Orange on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
    </property>
    <property name="text">
     <string>Add New Admin </string>
@@ -125,9 +115,9 @@ background-color: rgb(50, 205, 50);</string>
    <property name="geometry">
     <rect>
      <x>24</x>
-     <y>101</y>
-     <width>1881</width>
-     <height>761</height>
+     <y>60</y>
+     <width>1891</width>
+     <height>851</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -136,29 +126,31 @@ background-color: rgb(50, 205, 50);</string>
      <height>0</height>
     </size>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
    </property>
    <property name="styleSheet">
     <string notr="true">QTableWidget {
-    background-color: rgb(100, 149, 237); /* Cornflower Blue background */
-    color: rgb(255, 255, 255); /* White text */
-    gridline-color: rgb(255, 255, 255); /* White grid lines */
+    background-color: rgb(26,26,42); /* Cornflower Blue background */
+    color: rgb(255,255,255); /* Black text */
+    gridline-color: rgb(255,255,255); /* Black grid lines */
     font-family: Arial, sans-serif; /* Modern, clean font */
 }
-
 QHeaderView::section {
     background-color: rgb(65, 105, 225); /* Royal Blue header background */
-    color: rgb(255, 255, 255); /* White text for headers */
+    color: rgb(255,255,255); /* White text for headers */
     font-weight: bold; /* Bold text for headers */
     border: 1px solid rgb(255, 255, 255); /* White border for headers */
 }
-
-QTableWidget::item {
-    border: 1px solid rgb(255, 255, 255); /* White border for table items */
-    padding: 5px; /* Padding for better readability */
-}
-
 QTableWidget::item:alternate {
     background-color: rgb(173, 216, 230); /* Light Blue for alternate rows */
 }
@@ -179,20 +171,29 @@ QTableWidget::item:hover {
    <property name="editTriggers">
     <set>QAbstractItemView::NoEditTriggers</set>
    </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
    <property name="columnCount">
-    <number>7</number>
+    <number>6</number>
    </property>
    <attribute name="horizontalHeaderMinimumSectionSize">
     <number>39</number>
    </attribute>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>269</number>
+    <number>315</number>
+   </attribute>
+   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
    </attribute>
    <attribute name="verticalHeaderMinimumSectionSize">
     <number>26</number>
    </attribute>
    <attribute name="verticalHeaderDefaultSectionSize">
     <number>33</number>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
    </attribute>
    <column>
     <property name="text">
@@ -201,6 +202,7 @@ QTableWidget::item:hover {
     <property name="font">
      <font>
       <pointsize>11</pointsize>
+      <italic>false</italic>
       <bold>true</bold>
      </font>
     </property>
@@ -267,19 +269,126 @@ QTableWidget::item:hover {
      </font>
     </property>
    </column>
-   <column>
-    <property name="text">
-     <string>Action</string>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-   </column>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>10</y>
+     <width>351</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="CustomLineEdit" name="searchLineEdit">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*background-color: rgb(158, 109, 97,0%);*/
+ background-color: rgba(255, 255, 255, 0.8);
+color: rgb(0, 0, 0);
+border: 1px solid rgb(100, 100, 100);
+ padding: 5px;
+ border-radius: 5px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Enter text to search from table</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="searchButton">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*background-color: rgb(255, 132, 77);*/
+QPushButton {
+    background-color: rgb(255, 132, 77); /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid rgb(205, 92, 92); /* Indian Red border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 69, 0); /* Red-Orange on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="saveToPdfButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color: rgb(255, 132, 77);*/
+QPushButton {
+    background-color: rgb(255, 132, 77); /* Orange background */
+    color: rgb(0, 0, 0); /* Black text */
+    border: 2px solid rgb(205, 92, 92); /* Indian Red border */
+    padding: 10px 20px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 69, 0); /* Red-Orange on hover */
+}
+
+QPushButton:focus {
+    border-color: rgb(255, 255, 255); /* White border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional shadow on focus */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Save to Pdf</string>
+   </property>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header location="global">customlineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>searchLineEdit</tabstop>
+  <tabstop>searchButton</tabstop>
+  <tabstop>dashboardTableWidget</tabstop>
+  <tabstop>newUserButton</tabstop>
+  <tabstop>adminUserButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
